@@ -108,79 +108,116 @@
         </div>
         <main>
             <div class="main-content">
-
-                    <h2>Tab List:</h2>
-
-                    <input type="text" id="search-bar" placeholder="Search...">
-                    <ul id="list" style="font-size: 30px;">
-                        <a href="song/song1kpu.html">
-                            <li>
-                                Katy Perry - Unconditionally
-                                <table class="listtags">
-                                    <th class="listTagSig">Time Signature: 4/4</th>
-                                    <th class="listTagSig">BPM: 65</th>
-                                    <th class="listTagSig"> Trio</th>
-                                    <th class="listTagSig"> Pop</th>
-                                    <th class="listTagSig"> Slow</th>
-                                    <th class="listTagSig"> Easy</th>
-
-                                </table>
-                            </li>
-                        </a>
-                        <a href="song/song2sdv.html">
-                            <li>
-                                Stardew Valley OST - In The Deep Woods
-                                <table class="listtags">
-                                    <th class="listTagSig">Time Signature: 3/4</th>
-                                    <th class="listTagSig">BPM: 100</th>
-                                    <th class="listTagSig"> Quartet</th>
-                                    <th class="listTagSig"> Video Game</th>
-                                    <th class="listTagSig"> Moderate</th>
-
-                                </table>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li>
-                                Andrew Is A Buttface
-                            </li>
-                        </a>
-                        </li>
-                        <a href="">
-                            <li>
-                                Just kidding!
-                            </li>
-                        </a>
-                        <a href="">
-                            <li>
-                                Pretty cool right?
-                            </li>
-                        </a>
-                    </ul>
                 
-                    <script>
-                        // Get references to the search bar and the list
-                        const searchBar = document.getElementById('search-bar');
-                        const list = document.getElementById('list');
-                        const items = list.getElementsByTagName('li');
-                
-                        // Add event listener to the search bar for input event
-                        searchBar.addEventListener('input', function() {
-                            const searchText = searchBar.value.toLowerCase();
-                            // Loop through all list items
-                            Array.from(items).forEach(function(item) {
-                                const text = item.textContent.toLowerCase();
-                                // Check if the search text is found in the list item
-                                if (text.includes(searchText)) {
-                                    item.style.display = 'block'; // Show the list item
-                                } else {
-                                    item.style.display = 'none'; // Hide the list item
-                                }
+                <div class="tab-list">
+                    <div class="tablistSongs">
+                        <h2>Tab List:</h2>
+                        <div class="searchBar">
+                            <input type="text" id="search-bar" placeholder="Search...">
+                        </div>
+                        <div class="tablisting"> 
+                            <ul id="list" style="font-size: 30px;">
+                                <a href="song/song1kpu.html">
+                                    <li>
+                                        Katy Perry - Unconditionally
+                                        <table class="listtags">
+                                            <th class="listTagSig">Time Signature: 4/4</th>
+                                            <th class="listTagSig">BPM: 65</th>
+                                            <th class="listTagSig"> Trio</th>
+                                            <th class="listTagSig"> Pop</th>
+                                            <th class="listTagSig"> Slow</th>
+                                            <th class="listTagSig"> Easy</th>
+
+                                        </table>
+                                    </li>
+                                </a>
+                                <a href="song/song2sdv.html">
+                                    <li>
+                                        Stardew Valley OST - In The Deep Woods
+                                        <table class="listtags">
+                                            <th class="listTagSig">Time Signature: 3/4</th>
+                                            <th class="listTagSig">BPM: 100</th>
+                                            <th class="listTagSig"> Quartet</th>
+                                            <th class="listTagSig"> Video Game</th>
+                                            <th class="listTagSig"> Moderate</th>
+                                        </table>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        Filler for testing purposes
+                                            <table class="listtags">
+                                                <th class="listTagSig">Time Signature: 0</th>
+                                                <th class="listTagSig">BPM: 0</th>
+                                                <th class="listTagSig"> 0</th>
+                                                <th class="listTagSig"> None</th>
+                                                <th class="listTagSig"> Testing</th>
+                                            </table>
+                                    </li>
+                                </a>
+                                </li>
+                                <a href="">
+                                    <li>
+                                        Also Filler
+                                    </li>
+
+                                </a>
+                            </ul>
+                        </div>
+                        <script>
+                            // Get references to the search bar and the list
+                            const searchBar = document.getElementById('search-bar');
+                            const list = document.getElementById('list');
+                            const items = list.getElementsByTagName('li');
+                    
+                            // Add event listener to the search bar for input event
+                            searchBar.addEventListener('input', function() {
+                                const searchText = searchBar.value.toLowerCase();
+                                // Loop through all list items
+                                Array.from(items).forEach(function(item) {
+                                    const text = item.textContent.toLowerCase();
+                                    // Check if the search text is found in the list item
+                                    if (text.includes(searchText)) {
+                                        item.style.display = 'block'; // Show the list item
+                                    } else {
+                                        item.style.display = 'none'; // Hide the list item
+                                    }
+                                });
                             });
-                        });
-                    </script>
-                
-        
+                        </script>
+                    
+
+                    
+                    </div>
+                    <div class="tablistOG">   
+                        <h2 style="padding-bottom: 32px;">
+                            Originals:
+                        </h2>
+                        
+                        <ul id="list" style="font-size: 30px;">
+                            <a href="song/songogSBtW.html">
+                                <li>
+                                    Sink Beneath the Waves
+                                    <table class="listtags">
+                                        <th class="listTagSig">Time Signature: 4/4</th>
+                                        <th class="listTagSig">BPM: 80</th>
+                                        <th class="listTagSig"> Quartet</th>
+                                        <th class="listTagSig"> Slow</th>
+                                        <th class="listTagSig"> Easy</th>
+                                        <th class="listTagSig"> Original</th>
+                                    </table>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    Test Thing For List   
+                                </li>
+                            
+                            </a>
+                        </ul>
+                        
+                    </div>
+                </div>
             </div>
         </main>
     </body>

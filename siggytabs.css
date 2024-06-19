@@ -27,6 +27,26 @@ table {
   font-size: 0.8rem;
 }
 
+.tab-list {
+  display: inline-flex;
+  width: 100%;
+}
+
+.tablistOG {
+  display: block;
+  width: 50%;
+  padding: 0.5%;
+}
+
+.tablistSongs {
+  display:  block;
+
+  width: 50%;
+  padding: 0.5%
+}
+
+
+
 th {
   background-color: #444444e7;
 }
