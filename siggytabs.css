@@ -274,75 +274,148 @@ textarea {
     color: aliceblue;
 }
 
-  .full-width {
-    grid-column: span 2;
-  }
+.full-width {
+  grid-column: span 2;
+}
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
-    cursor: pointer;
-    background-color: #16161693;
-    width: 100%;
-  }
-  .listtags {
-    background-color: transparent;
-    text-align: center;
-    padding-top: 7px;
-    width: auto;
-    border: 10px;
-    font-size: 1rem;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: #0202028a;
+  width: 100%;
+}
+.listtags {
+  background-color: transparent;
+  text-align: center;
+  padding-top: 7px;
+  width: auto;
+  border: 10px;
+  font-size: 1rem;
 
-  }
-  .listTagSig {
-    background-color: #464646;
-    border: 2px solid #131313;
-    min-width: 50px;
-    padding: 5px;
-    padding-inline: 10px;
-    
-  }
+}
+.listTagSig {
+  background-color: #3f3f3f98;
+  border: 2px solid #131313;
+  min-width: 50px;
+  padding: 5px;
+  padding-inline: 10px;
+  
+}
 
-  .buttonimage-container {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 15px;
-  }
+.buttonimage-container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 15px;
+}
 
-  .buttonimage-container img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease-in;
-  }
+.buttonimage-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in;
+}
 
-  .buttonimage-container:hover img {
-    animation: wiggle 2s ease infinite;
-  }
+.buttonimage-container:hover img {
+  animation: wiggle 2s ease infinite;
+}
 
-  @keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(15deg);
-    }
-    50% {
-      transform: rotate(0deg);
-    }
-    75% {
-      transform: rotate(-15deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
   }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.newsSec {
+  width: 75%;
+}
+
+.newsHead {
+  font-size: 26px;
+  color: aliceblue;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.newsDivisions {
+  display: flex;
+  background: url(https://guildwars2.staticwars.com/wp-content/themes/guildwars2.com-live/img/line-wide.b5112394.jpg) repeat-x 0 0;
+  padding-bottom: 10px;
+}
+
+.newsDate {
+
+  width: 20px;
+  flex: 1;
+}
+
+.newsDay {
+  background-image: linear-gradient(45deg,transparent 30%,#000000);
+  color: aliceblue;
+  width: 50px;
+  border-right: 1px solid #ccc;
+  margin-top: 1px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 26px;
+
+}
+
+.newsMonth {
+  color: aliceblue;
+  text-align: center;
+  font-size: 16px;
+  width: 50px;
+}
+
+.newsContent {
+  flex: 17;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.newsTitle {
+  font-size: 26px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.newsText {
+  font-size: 16px;
+  padding-left: 10px;
+  color: rgba(239, 244, 248, 0.719);
+}
+
+#newsReadMore {
+  color: rgb(245, 59, 59);
+}
+
+#newsReadMore:hover {
+  color: rgb(253, 144, 144);
+}
+
+.newsReadMore {
+  padding-top: 5px;
+  font-size: 16px;
+  padding-left: 10px;
+}
