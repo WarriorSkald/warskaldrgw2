@@ -348,6 +348,7 @@ li {
 
 .newsSec {
   width: 75%;
+  display: inline-block;
 }
 
 .newsHead {
@@ -364,13 +365,12 @@ li {
 }
 
 .newsDate {
-
   width: 20px;
   flex: 1;
 }
 
 .newsDay {
-  background-image: linear-gradient(45deg,transparent 30%,#000000);
+  background-image: linear-gradient(45deg,transparent 30%,#000000a8);
   color: aliceblue;
   width: 50px;
   border-right: 1px solid #ccc;
@@ -418,4 +418,32 @@ li {
   padding-top: 5px;
   font-size: 16px;
   padding-left: 10px;
+}
+
+.rightSidePanel {
+  background-color: #ff000000;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+  width: 23%;
+  height: 1000px;
+  padding-top: 1%;
+}
+
+.sidePanelSection {
+  display: block;
+  background-color: #202020;
+  height: 275px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.74) 1rem 1rem 10px);
+}
+
+#sidePanelSection {
+  display: block;
+}
+
+.sidePanelText {
+  color: aliceblue;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
