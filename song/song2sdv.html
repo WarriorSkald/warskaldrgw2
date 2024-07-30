@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device-width">
+        <meta name="theme-color" content="#000000">
+        <title>Siggy's Tabs</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="../axeandlute.png">
+        <link rel="stylesheet" href="../siggytabs.css">
+        <link rel="icon" href="../siggypix.png">
+
+        
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <div id="root">
+            <div class="banner">
+                <div class="bannerContainer">
+                    <!--Lefthand Popup Menu-->
+                    <div class="burger-menu">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                      
+                    </div>
+                    
+                    <!--Header-->
+                    <a href="../index.html"><h1>The Warrior Skaldr</h1></a>
+                    
+                    
+                    <!--home button-->
+                    <div class="buttonimage-container">
+                        <a href="../index.html">
+                            <img src="../siggypix.png" alt="pixelated helmet" style="image-rendering: pixelated;">
+                        </a>
+                    </div>
+                    
+
+                </div>
+                  
+            </div>
+            <div class="side-menu">
+                <a href="../index.html">
+                    <div class="menubutton" id="menubutton">
+                        <i class="fas fa-home" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Home
+                    </div>
+                </a>
+
+                <a href="../tabs.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-play" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;GW2 Tabs
+                    </div>
+                </a>
+                
+                <a href="../requests.html">
+                    <div class="menubutton" >
+                        <i class="fas fa-music" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Song Request
+                    </div>
+                </a>
+            
+                <a href="../irlmusic.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;IRL Music
+                    </div>
+                </a>
+
+                <a href="../about.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;About Siggy
+                    </div>
+                </a>
+                
+                <div class="copy-right">
+                    <p>Sigfirar Finnlaoch&copy;</p>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    // Function to close the side menu
+                    function closeSideMenu() {
+                        $('.side-menu').removeClass('open');
+                        $('.side-menu').css('left', '-500px');
+                    }
+    
+                    // Function to open the side menu
+                    function openSideMenu() {
+                        $('.side-menu').addClass('open');
+                        $('.side-menu').css('left', '0');
+                    }
+    
+                    // Close the side menu initially
+                    closeSideMenu();
+    
+                    // Toggle the side menu when burger menu is clicked
+                    $('.burger-menu').click(function() {
+                        if ($('.side-menu').hasClass('open')) {
+                            closeSideMenu();
+                        } else {
+                            openSideMenu();
+                        }
+                    });
+    
+                    // Close the side menu when the user clicks outside of it
+                    $(document).click(function(event) {
+                        if (!$(event.target).closest('.side-menu').length && !$(event.target).closest('.burger-menu').length) {
+                            closeSideMenu();
+                        }
+                    });
+                });
+               
+              </script>
+        </div>
+        <main>
+
+            <!-- color codes for sheet music -->
+            <!-- <span style="color:rgb(136, 255, 136);">|</span> -->
+            <!-- <span style="color:rgb(174, 182, 255);">[2/5/7]</span> -->
+            <!-- <span style="color:rgb(255, 168, 54);">(5)</span> -->
+
+            <div class="main-content">
+
+                <h3>In The Deep Woods - Stardew Valley</h3>
+                <p>
+                    Tempo = 100bpm
+                    <br>
+                    <br>
+                    3/4
+                </p>
+
+                <table class="tabTable" id="tabTable" style="padding-bottom: 0px;">
+
+                    <th width="1%">&nbsp;</th>
+                    <th width="550px"> Harp Melody</th>
+                    <th> Harp Lower</th>
+                    
+
+                    <tr>
+                        <td align="center">
+                            A
+                        </td>
+                        <td>
+                            <!--HarpMelodyA-->
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            2 4  
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 4 
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            1 5
+                            <span style="color:rgb(255, 168, 54);">(3/8 - 3/8)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            5 2 
+                            7/<span style="color:rgb(255, 168, 54);">(5)</span>
+                            - 
+                            5/<span style="color:rgb(255, 168, 54);">(2)</span>
+                            -
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            2 4  
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 4 
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            1 5
+                            <span style="color:rgb(255, 168, 54);">(3/8 - 3/8)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            5 2 
+                            7/<span style="color:rgb(255, 168, 54);">(5)</span>
+                            - 
+                            5/<span style="color:rgb(255, 168, 54);">(2)</span>
+                            -
+                            <span style="color:rgb(136, 255, 136);">:| x5</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 4  
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 4 
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            1 5
+                            <span style="color:rgb(255, 168, 54);">(3/8 - 3/8)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            - - 5 4 3 -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--HarpLowerA-->
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[1]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5]</span>
+                            ~ 
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            <span style="color:rgb(136, 255, 136);">:| x5</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[1]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        
+                    <tr>
+                        <td align="center">
+                            B
+                        </td>
+                        <td>
+                            <!--HarpMelodyB-->
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            6 5 6
+                            <span style="color:rgb(255, 168, 54);">(2)</span>
+                            6 5
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 3 4 6 4 3
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2- ~  ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ 25
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            6 5 6
+                            <span style="color:rgb(255, 168, 54);">(2)</span>
+                            6 5
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 3 4 6 4 3
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2- ~  ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ 25
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <br>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            6 5 6
+                            <span style="color:rgb(255, 168, 54);">(2)</span>
+                            6 5 
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 3 4 6 4 8 
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(255, 168, 54);">(2)</span>  
+                            - ~ ~ 
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ 2 5 
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            6 5 6 
+                            <span style="color:rgb(255, 168, 54);">(2)</span>
+                            6 5
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 3 4 6 4 3 
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2- &nbsp;~ &nbsp;~ &nbsp; 
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            &nbsp;~ &nbsp;~ &nbsp;~ 
+                            <span style="color:rgb(136, 255, 136);">:| x2 </span>
+                        </td>
+                        <td>
+                            <!--HarpLowerB-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[2/4/6]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2/4/6]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[1/3/5]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2/5/7]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2/4/6]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|:</span>
+                            <span style="color:rgb(174, 182, 255);">[2/4/6]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2/4/6]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[1/3/5]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2/5/7]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2/4/6]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+
+
+
+                        </td>
+                        
+                    <tr>
+                        <td align="center">
+                           C 
+                        </td>
+                        <td>
+                            <!--HarpMelodyC-->
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            2 4  
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 4 
+                            <span style="color:rgb(255, 168, 54);">(2/5 - 2/5)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            1 5
+                            <span style="color:rgb(255, 168, 54);">(3/8 - 3/8)</span>
+                            -  
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            5 2 
+                            7/<span style="color:rgb(255, 168, 54);">(5)</span>
+                            - 
+                            5/<span style="color:rgb(255, 168, 54);">(2)</span>
+                            -
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                            
+                        </td>
+                        <td>
+                            <!--HarpLowerC-->
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[1]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5]</span>
+                            ~ 
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                        </td>
+                        
+                    <tr>
+                        <td align="center">
+                            END
+                        </td>
+                        <td>
+                            <!--HarpMelodyE-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2 -  ~  ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--HarpLowerE-->
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th>
+                            &nbsp;
+                        </th>
+
+                        <th>
+                            Bell
+                        </th>
+                        <th>
+                            Bass
+                        </th>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            A
+                        </td>
+                        
+                        <td>
+                            <!--BellA-->
+                            <span style="color:rgb(136, 255, 136);">|:</span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                            <br>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|:</span>
+                            2 ~ 2
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6 ~ 6
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5- ~ 4 3
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2 ~ 1
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2 ~ 2
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6 ~ 6
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ 5
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5 - 8]</span>
+                            - 3 -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|:</span>
+                            2 ~ 2
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6 ~ 6
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5- ~ 4 3
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2 ~ 1
+                            <span style="color:rgb(136, 255, 136);">:| x3</span>
+                        </td>
+                        <td>
+                            <!--BassA-->
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">:| x4</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            2 ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5]</span>
+                            ~
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            <span style="color:rgb(136, 255, 136);">:| x3</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            B
+                        </td>
+                        
+                        <td>
+                            <!--BellB-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2 ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            1 ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[7]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|:</span>
+                            6 - 6 - 6 - 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            8 - 8 - 8 - 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            7 - 7 - 7 -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6 - 6 - 6 -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 - 3 - 3 -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            1 - 1 - 1 -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2 - 2 - 2 -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6 - 6 - 6] </span>-
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                        </td>
+                        <td>
+                            <!--BassB-->
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 2 2 2 2 2
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 4 4 4 4 4
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 2 2 2 2 2
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 4 4 4 4 4  &nbsp;
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            1 1 1 1 1 1
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5 5 5 5 5 5]</span>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 2 2 2 2 2
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 2 2 2 2 2
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            2 2 2 2 2 -
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 4 4 4 4 -
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 2 2 2 2 -
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            4 4 4 4 4 - &nbsp;
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            1 1 1 1 1 -
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5 5 5 5 5]</span>
+                            -
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 2 2 2 2 -
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 2 2 2 2 -
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            C
+                        </td>
+                        
+                        <td>
+                            <!--BellC-->
+                            <span style="color:rgb(136, 255, 136);">|:</span>
+                            2 ~ 2
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6 ~ 6
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5- ~ 4 3
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2 ~ 1
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                        </td>
+                        <td>
+                            <!--BassC-->
+                            <span style="color:rgb(136, 255, 136);">|: </span>
+                            2 ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[2]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            <span style="color:rgb(174, 182, 255);">[5]</span>
+                            ~
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            <span style="color:rgb(136, 255, 136);">:| x2</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            END
+                        </td>
+                        
+                        <td>
+                            <!--BellEND-->
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                        </td>
+                        <td>
+                            <!--BassE-->
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                            2 ~ ~
+                            <span style="color:rgb(136, 255, 136);">| </span>
+                        </td>
+                    </tr>
+                   
+                </table>    
+
+            </div>
+        </main>
+    </body>
+
+</html>

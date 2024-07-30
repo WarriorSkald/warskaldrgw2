@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device-width">
+        <meta name="theme-color" content="#000000">
+        <title>Warrior Skaldr</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="axeandlute.png">
+        <link rel="stylesheet" href="siggytabs.css">
+        
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <div id="root">
+            <div class="banner">
+                <div class="bannerContainer">
+                    <!--Lefthand Popup Menu-->
+                    <div class="burger-menu">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                      
+                    </div>
+                    
+                    <!--Header-->
+                    <a href="index.html"><h1>The Warrior Skaldr</h1></a>
+                    
+                    
+                    <!--home button-->
+                    <div class="buttonimage-container">
+                        <a href="index.html">
+                            <img src="siggypix.png" alt="pixelated helmet" style="image-rendering: pixelated;">
+                        </a>
+                    </div>
+                    
+
+                </div>
+                  
+            </div>
+            <div class="side-menu">
+                <a href="index.html">
+                    <div class="menubutton" id="menubutton">
+                        <i class="fas fa-home" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Home
+                    </div>
+                </a>
+
+                <a href="tabs.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-play" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;GW2 Tabs
+                    </div>
+                </a>
+                
+                <a href="requests.html">
+                    <div class="menubutton" >
+                        <i class="fas fa-music" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Song Request
+                    </div>
+                </a>
+            
+                <a href="irlmusic.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;IRL Music
+                    </div>
+                </a>
+
+                <a href="about.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;About Siggy
+                    </div>
+                </a>
+
+                    
+                
+                <div class="copy-right">
+                    <p>Sigfirar Finnlaoch&copy;</p>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    // Function to close the side menu
+                    function closeSideMenu() {
+                        $('.side-menu').removeClass('open');
+                        $('.side-menu').css('left', '-500px');
+                    }
+    
+                    // Function to open the side menu
+                    function openSideMenu() {
+                        $('.side-menu').addClass('open');
+                        $('.side-menu').css('left', '0');
+                    }
+    
+                    // Close the side menu initially
+                    closeSideMenu();
+    
+                    // Toggle the side menu when burger menu is clicked
+                    $('.burger-menu').click(function() {
+                        if ($('.side-menu').hasClass('open')) {
+                            closeSideMenu();
+                        } else {
+                            openSideMenu();
+                        }
+                    });
+    
+                    // Close the side menu when the user clicks outside of it
+                    $(document).click(function(event) {
+                        if (!$(event.target).closest('.side-menu').length && !$(event.target).closest('.burger-menu').length) {
+                            closeSideMenu();
+                        }
+                    });
+                });
+               
+              </script>
+        </div>
+        <main>
+            <div class="main-content">
+                <div class="tab-list">
+                    <div class="tablistSongs">
+                        <div class="tablisting">
+                            <ul id="list" style="font-size: 30px;">
+                                <a href="https://www.youtube.com/watch?v=28GvmB-QP_c">
+                                    <li>
+                                        Aurora - Runaway 
+                                        <br> Arrangement based on Naomi SV's Harp Cover
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        Test Filler
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>

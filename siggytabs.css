@@ -1,0 +1,531 @@
+@font-face {
+  font-family: 'norseFont';
+  src: 
+       url('Norse-KaWl.otf')  format('opentype');
+}
+
+h1 {
+  font-family: norseFont;
+  font-weight: bold;
+}
+
+p, form  {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+table {
+  background-color: #000000af;
+  width: 100%;
+  border: 1px solid; 
+  height: auto;
+}
+
+.tabTable {
+  background-color:#020202d0;
+}
+
+.tabTable th {
+    color: #47fab6fd;
+    font-size: 1rem;
+}
+
+.tabTable td {
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.tab-list {
+  display: inline-flex;
+  width: 100%;
+}
+
+.tablistOG {
+  display: block;
+  width: 50%;
+  padding: 0.5%;
+}
+
+.tablistSongs {
+  display:  block;
+
+  width: 50%;
+  padding: 0.5%
+}
+
+
+
+th {
+  background-color: #444444e7;
+}
+
+td {
+  color: aliceblue;
+  background-color: #38383893;
+  padding: 10px;
+
+}
+
+h1 {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+h2   {
+    font-size: 30px;
+    color: aliceblue;
+}
+h3   {
+  font-size: 30px;
+  color: aliceblue;
+}
+
+
+a:link {
+    color: rgb(194, 194, 194);
+    font: roboto;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(194, 194, 194);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+body, html {
+    background-image: url(malchorsleap.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/*Popup Menu*/
+/* Style the burger menu container */
+.burger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 20000; 
+  }
+  
+  /* Style the burger line */
+  .burger-line {
+    width: 50px;
+    height: 5px;
+    background-color: #ffffff;
+    margin-bottom: 10px; 
+  }
+      /* Style for invisible overlay */
+      .burger-menu-overlay {
+        width: 80px; /* Adjust width and height to expand clickable area */
+        height: 80px;
+        position: absolute;
+        top: -20px; /* Adjust positioning to center the overlay */
+        left: -20px;
+        opacity: 0; /* Make the overlay invisible */
+      }
+  
+
+
+  /* Style the banner */
+  .banner {
+    position: fixed; 
+    height: 80px;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #272727; 
+    padding: 0px; 
+    z-index: 10;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.61)
+    
+  }
+ 
+
+  /* Style the bannercontainer */
+.bannerContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+
+
+  }
+
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+  }
+  
+
+
+/* Styles for the side menu */
+.side-menu {
+    position: fixed;
+    top: 80px; /* Adjust as needed to stay below the banner */
+    left: -500px; /* Start off-screen */
+    width: 350px;
+    height: 100%;
+    background-color: #131313;
+    box-shadow: 20px 0px 40px 10px #0000009c;
+    transition: left 0.5s ease; /* Add a smooth transition effect */
+    padding-left: 0px;
+    padding-top: 10px;
+    font-size: 30px;
+    cursor: default;
+    z-index: 9;
+}
+
+.menubutton {
+    position: flex;
+    margin-top: 0px;
+    height: 70px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 11px;
+    font-size: 40px;
+}
+
+.mButtonContainer {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding: 10%;
+}
+
+.menubutton:hover {
+  background-color: rgb(43, 42, 42);
+  text-decoration: none;
+}
+
+.copy-right {
+  color: aliceblue; 
+  background-color: #272727; 
+  width: 350px; 
+  position: fixed; 
+  bottom: 0; 
+  margin-bottom: 0px; 
+  padding-left: 65px; 
+  margin-top: 10px; 
+  min-height: 25px; 
+  z-index: 8; 
+  font-size: 25px;
+}
+
+.main-content {
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: -100px;
+  height: 100%;
+  min-height: 1200px;
+  background-color: #000000a9;
+  z-index: 8;
+  position: relative;
+  text-align: left;
+  margin: auto;
+  width: 1200px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 5%;
+  margin-bottom: -1%;
+}
+
+#search-bar {
+    margin-bottom: 10px;
+}
+
+
+form {
+    position: relative;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #00000067;
+    border: 1px solid #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+input {
+    background-color: #00000000;
+    color: aliceblue;
+
+}
+
+textarea {
+    height: 90%;
+    width: 100%;
+    margin-left: 0px;
+    max-width: 100%;
+    background-color: #00000000;
+    color: aliceblue;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: #0202028a;
+  width: 100%;
+}
+.listtags {
+  background-color: transparent;
+  text-align: center;
+  padding-top: 7px;
+  width: auto;
+  border: 10px;
+  font-size: 1rem;
+
+}
+.listTagSig {
+  background-color: #3f3f3f98;
+  border: 2px solid #131313;
+  min-width: 50px;
+  padding: 5px;
+  padding-inline: 10px;
+  
+}
+
+.buttonimage-container {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 0px;
+}
+
+.buttonimage-container img {
+  height: 75px;
+  will-change: filter;
+  transition: transform 0.1s ease-in-out;
+  transition: filter 0.5s ease-in;
+
+
+}
+
+.buttonimage-container:hover img {
+  animation: wiggle 2s linear infinite;
+  transition: filter 0.5s ease-out;
+  filter: drop-shadow(rgb(255, 30, 0) 0px 0px 10px);
+
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  25% {
+    transform: rotate(15deg);
+
+  }
+  50% {
+    transform: rotate(0deg);
+
+  }
+  75% {
+    transform: rotate(-15deg);
+
+  }
+  100% {
+    transform: rotate(0deg);
+
+  }
+}
+
+.newsSec {
+  width: 75%;
+  display: inline-block;
+}
+
+.newsHead {
+  font-size: 26px;
+  color: aliceblue;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.newsDivisions {
+  display: flex;
+  background: url(https://guildwars2.staticwars.com/wp-content/themes/guildwars2.com-live/img/line-wide.b5112394.jpg) repeat-x 0 0;
+  padding-bottom: 10px;
+}
+
+.newsDate {
+  width: 20px;
+  flex: 1;
+}
+
+.newsDay {
+  background-image: linear-gradient(45deg,transparent 30%,#000000a8);
+  color: aliceblue;
+  width: 50px;
+  border-right: 1px solid #ccc;
+  margin-top: 1px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 26px;
+
+}
+
+.newsMonth {
+  color: aliceblue;
+  text-align: center;
+  font-size: 16px;
+  width: 50px;
+}
+
+.newsContent {
+  flex: 17;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.newsTitle {
+  font-size: 26px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.newsText {
+  font-size: 16px;
+  padding-left: 10px;
+  color: rgba(239, 244, 248, 0.719);
+}
+
+#newsReadMore {
+  color: rgb(245, 59, 59);
+}
+
+#newsReadMore:hover {
+  color: rgb(253, 144, 144);
+}
+
+.newsReadMore {
+  padding-top: 5px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.rightSidePanel {
+  background-color: #ff000000;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+  width: 23%;
+  height: 1000px;
+  padding-top: 1%;
+}
+
+.sidePanelSection {
+  display: block;
+  background-color: #202020;
+  height: 275px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.74) 1rem 1rem 10px);
+  width: 100%;
+}
+
+#sidePanelSection {
+  display: block;
+}
+
+.sidePanelText {
+  color: aliceblue;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ytBanner {
+  position: relative;
+  width: 220px;
+  height: 720px;
+  background-color: #131313;
+  clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 50% 90%, 0 70%, 0 0);
+}
+
+.ytBannerContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 950px;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.767) 50%, rgba(0, 0, 0, 0) 80%);
+  clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 50% 90%, 0 70%, 0 0);
+  margin-right: 15px;
+}
+
+
+.ytBanner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 720px;
+  display: block;
+
+
+}
+
+.ytBannerContainer .animatedBanner  {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.ytBannerContainer:hover  .animatedBanner  {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.ytBannerTitle {
+  padding-top: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; 
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.815) 50%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+  height: 50px;
+  font-family: norseFont;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+

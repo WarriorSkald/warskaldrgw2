@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device-width">
+        <meta name="theme-color" content="#000000">
+        <title>The Warrior Skaldr</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="axeandlute.png">
+        <link rel="stylesheet" href="siggytabs.css">
+        
+    </head>
+
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <div id="root">
+            <div class="banner">
+                <div class="bannerContainer">
+                    <!--Lefthand Popup Menu-->
+                    <div class="burger-menu">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                      
+                    </div>
+                    
+                    <!--Header-->
+                    <a href="index.html"><h1>The Warrior Skaldr</h1></a>
+                    
+                    
+                    <!--home button-->
+                    <div class="buttonimage-container">
+                        <a href="index.html">
+                            <img src="siggypix.png" alt="pixelated helmet" style="image-rendering: pixelated;">
+                        </a>
+                    </div>
+                    
+
+                </div>
+                  
+            </div>
+            <div class="side-menu">
+                <a href="index.html">
+                    <div class="menubutton" id="menubutton">
+                        <i class="fas fa-home" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Home
+                    </div>
+                </a>
+
+                <a href="tabs.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-play" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;GW2 Tabs
+                    </div>
+                </a>
+                
+                <a href="requests.html">
+                    <div class="menubutton" >
+                        <i class="fas fa-music" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Song Request
+                    </div>
+                </a>
+            
+                <a href="irlmusic.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;IRL Music
+                    </div>
+                </a>
+
+                <a href="about.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;About Siggy
+                    </div>
+                </a>
+
+                
+                
+                <div class="copy-right">
+                    <p>Sigfirar Finnlaoch&copy;</p>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    // Function to close the side menu
+                    function closeSideMenu() {
+                        $('.side-menu').removeClass('open');
+                        $('.side-menu').css('left', '-500px');
+                    }
+    
+                    // Function to open the side menu
+                    function openSideMenu() {
+                        $('.side-menu').addClass('open');
+                        $('.side-menu').css('left', '0');
+                    }
+    
+                    // Close the side menu initially
+                    closeSideMenu();
+    
+                    // Toggle the side menu when burger menu is clicked
+                    $('.burger-menu').click(function() {
+                        if ($('.side-menu').hasClass('open')) {
+                            closeSideMenu();
+                        } else {
+                            openSideMenu();
+                        }
+                    });
+    
+                    // Close the side menu when the user clicks outside of it
+                    $(document).click(function(event) {
+                        if (!$(event.target).closest('.side-menu').length && !$(event.target).closest('.burger-menu').length) {
+                            closeSideMenu();
+                        }
+                    });
+                });
+               
+              </script>
+        </div>
+        <main>
+            <div class="main-content">
+                <div>
+                    <h2 style="position: relative; text-align: center;">Welcome to the Warrior Skaldr Tab Page</h2>
+                    <h2 style="position: relative; text-align: center; font-size: 20px;">Just a reminder that this page is a work in progress
+                        <br> and updates may not be loaded due to your browser caching old content.
+                        <br> If you've been to this page before and something seems off, please clear your browser cache.
+                    </h2>
+                </div>
+                <div class="newsSec">
+                    <div class="newsHead">News</div>
+
+                    <div class="newsDivisions">
+                        <div class="newsDate">
+                            <div class="newsDay">
+                                30
+                            </div>
+                            <div class="newsMonth">
+                                July
+                            </div>
+                        </div>
+
+                        <div class="newsContent">
+                            <div class="newsTitle">
+                                <a href="song/song3dayslater.html">New Tab! 28 Days Later</a>
+                            </div>
+                            <div class="newsText">
+                                New tab for "In the House, in a Heartbeat", tab and arrangement by me.
+                            </div>
+                            <div class="newsReadMore">
+                                <a id="newsReadMore" href="song/song3dayslater.html">Click here to see more!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsDivisions">
+                        <div class="newsDate">
+                            <div class="newsDay">
+                                16
+                            </div>
+                            <div class="newsMonth">
+                                July
+                            </div>
+                        </div>
+
+                        <div class="newsContent">
+                            <div class="newsTitle">
+                                <a href="irlmusic.html">Siggy is posting IRL music!</a>
+                            </div>
+                            <div class="newsText">
+                                You can click the link here, or navigate via the burger menu at the top left.
+                            </div>
+                            <div class="newsReadMore">
+                                <a id="newsReadMore" href="irlmusic.html">Click here to see more!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsDivisions">
+                        <div class="newsDate">
+                            <div class="newsDay">
+                                25
+                            </div>
+                            <div class="newsMonth">
+                                June
+                            </div>
+                        </div>
+
+                        <div class="newsContent">
+                            <div class="newsTitle">
+                                <a href="https://warriorskald.github.io/warskaldrgw2/song/songogSBtW.html">Siggy Found Out How to Add a Media Player!</a>
+                            </div>
+                            <div class="newsText">
+                                Currently only "Sink Beneath the Waves" has playable media, but stay in TUNE for more additions!
+                            </div>
+                            <div class="newsReadMore">
+                                <a id="newsReadMore" href="https://warriorskald.github.io/warskaldrgw2/song/songogSBtW.html">Click here to see more!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsDivisions">
+                        <div class="newsDate">
+                            <div class="newsDay">
+                                24
+                            </div>
+                            <div class="newsMonth">
+                                June
+                            </div>
+                        </div>
+
+                        <div class="newsContent">
+                            <div class="newsTitle">
+                                <a href="https://warriorskald.github.io/warskaldrgw2/song/songogSBtW.html">New Original Song!</a>
+                            </div>
+                            <div class="newsText">
+                                Sigfirar has written an original song to be played within GW2!
+                            </div>
+                            <div class="newsReadMore">
+                                <a id="newsReadMore" href="https://warriorskald.github.io/warskaldrgw2/song/songogSBtW.html">Click here to see more!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsDivisions">
+                        <div class="newsDate">
+                            <div class="newsDay">
+                                20
+                            </div>
+                            <div class="newsMonth">
+                                June
+                            </div>
+                        </div>
+
+                        <div class="newsContent">
+                            <div class="newsTitle">
+                                <a href="https://warriorskald.github.io/warskaldrgw2/tabs.html">Tab Page!</a>
+                            </div>
+                            <div class="newsText">
+                                We have a listing for tabs.
+                            </div>
+                            <div class="newsReadMore">
+                                <a id="newsReadMore" href="https://warriorskald.github.io/warskaldrgw2/tabs.html">Click here to see more!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsDivisions">
+                        <div class="newsDate">
+                            <div class="newsDay">
+                                14
+                            </div>
+                            <div class="newsMonth">
+                                June
+                            </div>
+                        </div>
+
+                        <div class="newsContent">
+                            <div class="newsTitle">
+                                <a href="https://warriorskald.github.io/warskaldrgw2/index.html">Warrior Skaldr is Now Operational!</a>
+                            </div>
+                            <div class="newsText">
+                                This is the day we officially start our journey.
+                            </div>
+                            <div class="newsReadMore">
+                                <a id="newsReadMore" href="https://warriorskald.github.io/warskaldrgw2/index.html">Click here to see more!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsReadMore">
+                        <a id="newsReadMore" href="https://warriorskald.github.io/warskaldrgw2/index.html">All News</a>
+                    </div>
+                </div>
+                <div class="rightSidePanel">
+                    <div class="sidePanelSection">
+                        <a id="sidePanelSection" class="cidePanelSection" href="upcoming.html"><img src="luteplaying.jpg" alt="Lute being played" width="100%"></a>
+                        <div class="sidePanelText">
+                            Upcoming Tabs!
+                        </div>
+                        <div class="sidePanelText">
+                        <a id="newsReadMore" href="upcoming.html">Read More!</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div>
+
+            </div>
+        </main>
+    </body>
+</html>

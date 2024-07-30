@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device-width">
+        <meta name="theme-color" content="#000000">
+        <title>Siggy's Tabs</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="axeandlute.png">
+        <link rel="stylesheet" href="siggytabs.css">
+        
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <div id="root">
+            <div class="banner">
+                <div class="bannerContainer">
+                    <!--Lefthand Popup Menu-->
+                    <div class="burger-menu">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                      
+                    </div>
+                    
+                    <!--Header-->
+                    <a href="index.html"><h1>The Warrior Skaldr</h1></a>
+                    
+                    
+                    <!--home button-->
+                    <div class="buttonimage-container">
+                        <a href="index.html">
+                            <img src="siggypix.png" alt="pixelated helmet" style="image-rendering: pixelated;">
+                        </a>
+                    </div>
+                    
+
+                </div>
+                  
+            </div>
+            <div class="side-menu">
+                <a href="index.html">
+                    <div class="menubutton" id="menubutton">
+                        <i class="fas fa-home" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Home
+                    </div>
+                </a>
+
+                <a href="tabs.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-play" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;GW2 Tabs
+                    </div>
+                </a>
+                
+                <a href="requests.html">
+                    <div class="menubutton" >
+                        <i class="fas fa-music" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Song Request
+                    </div>
+                </a>
+            
+                <a href="irlmusic.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;IRL Music
+                    </div>
+                </a>
+
+                <a href="about.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;About Siggy
+                    </div>
+                </a>
+
+                    
+                
+                <div class="copy-right">
+                    <p>Sigfirar Finnlaoch&copy;</p>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    // Function to close the side menu
+                    function closeSideMenu() {
+                        $('.side-menu').removeClass('open');
+                        $('.side-menu').css('left', '-500px');
+                    }
+    
+                    // Function to open the side menu
+                    function openSideMenu() {
+                        $('.side-menu').addClass('open');
+                        $('.side-menu').css('left', '0');
+                    }
+    
+                    // Close the side menu initially
+                    closeSideMenu();
+    
+                    // Toggle the side menu when burger menu is clicked
+                    $('.burger-menu').click(function() {
+                        if ($('.side-menu').hasClass('open')) {
+                            closeSideMenu();
+                        } else {
+                            openSideMenu();
+                        }
+                    });
+    
+                    // Close the side menu when the user clicks outside of it
+                    $(document).click(function(event) {
+                        if (!$(event.target).closest('.side-menu').length && !$(event.target).closest('.burger-menu').length) {
+                            closeSideMenu();
+                        }
+                    });
+                });
+               
+              </script>
+        </div>
+        <main>
+            <div class="main-content">
+                
+                <div class="tab-list">
+                    <div class="tablistSongs">
+                        <h2>Tab List:</h2>
+                        <div class="searchBar">
+                            <input type="text" id="search-bar" placeholder="Search...">
+                        </div>
+                        <div class="tablisting"> 
+                            <ul id="list" style="font-size: 30px;">
+                                <a href="song/song1kpu.html">
+                                    <li>
+                                        Katy Perry - Unconditionally
+                                        <table class="listtags">
+                                            <th class="listTagSig">Time Signature: 4/4</th>
+                                            <th class="listTagSig">BPM: 65</th>
+                                            <th class="listTagSig"> Trio</th>
+                                            <th class="listTagSig"> Pop</th>
+                                            <th class="listTagSig"> Slow</th>
+                                            <th class="listTagSig"> Easy</th>
+
+                                        </table>
+                                    </li>
+                                </a>
+                                <a href="song/song2sdv.html">
+                                    <li>
+                                        Stardew Valley OST - In The Deep Woods
+                                        <table class="listtags">
+                                            <th class="listTagSig">Time Signature: 3/4</th>
+                                            <th class="listTagSig">BPM: 100</th>
+                                            <th class="listTagSig"> Quartet</th>
+                                            <th class="listTagSig"> Video Game</th>
+                                            <th class="listTagSig"> Moderate</th>
+                                        </table>
+                                    </li>
+                                </a>
+                                <a href="song/song3dayslater.html">
+                                    <li>
+                                        In the House, in a Heartbeat - 28 Days Later OST
+                                        <table class="listtags">
+                                            <th class="listTagSig">Time Signature: 4/4</th>
+                                            <th class="listTagSig">BPM: 74</th>
+                                            <th class="listTagSig"> Quintet</th>
+                                            <th class="listTagSig"> Film Score</th>
+                                            <th class="listTagSig"> Slow</th>
+                                            <th class="listTagSig"> Easy</th>
+
+                                        </table>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        Filler for testing purposes
+                                            <table class="listtags">
+                                                <th class="listTagSig">Time Signature: 0</th>
+                                                <th class="listTagSig">BPM: 0</th>
+                                                <th class="listTagSig"> 0</th>
+                                                <th class="listTagSig"> None</th>
+                                                <th class="listTagSig"> Testing</th>
+                                            </table>
+                                    </li>
+                                </a>
+                                </li>
+                                <a href="">
+                                    <li>
+                                        Filler
+                                    </li>
+
+                                </a>
+                            </ul>
+                        </div>
+                        <script>
+                            // Get references to the search bar and the list
+                            const searchBar = document.getElementById('search-bar');
+                            const list = document.getElementById('list');
+                            const items = list.getElementsByTagName('li');
+                    
+                            // Add event listener to the search bar for input event
+                            searchBar.addEventListener('input', function() {
+                                const searchText = searchBar.value.toLowerCase();
+                                // Loop through all list items
+                                Array.from(items).forEach(function(item) {
+                                    const text = item.textContent.toLowerCase();
+                                    // Check if the search text is found in the list item
+                                    if (text.includes(searchText)) {
+                                        item.style.display = 'block'; // Show the list item
+                                    } else {
+                                        item.style.display = 'none'; // Hide the list item
+                                    }
+                                });
+                            });
+                        </script>
+                    
+
+                    
+                    </div>
+                    <div class="tablistOG">   
+                        <h2 style="padding-bottom: 32px;">
+                            Originals:
+                        </h2>
+                        
+                        <ul id="list" style="font-size: 30px;">
+                            <a href="song/songogSBtW.html">
+                                <li>
+                                    Sink Beneath the Waves
+                                    <table class="listtags">
+                                        <th class="listTagSig">Time Signature: 4/4</th>
+                                        <th class="listTagSig">BPM: 80</th>
+                                        <th class="listTagSig"> Quartet</th>
+                                        <th class="listTagSig"> Slow</th>
+                                        <th class="listTagSig"> Easy</th>
+                                        <th class="listTagSig"> Original</th>
+                                    </table>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    Test Filler For List   
+                                </li>
+                            
+                            </a>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>

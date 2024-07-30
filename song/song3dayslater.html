@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device-width">
+        <meta name="theme-color" content="#000000">
+        <title>Siggy's Tabs</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="../axeandlute.png">
+        <link rel="stylesheet" href="../siggytabs.css">
+        <link rel="icon" href="../siggypix.png">
+
+        
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <div id="root">
+            <div class="banner">
+                <div class="bannerContainer">
+                    <!--Lefthand Popup Menu-->
+                    <div class="burger-menu">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                      
+                    </div>
+                    
+                    <!--Header-->
+                    <a href="../index.html"><h1>The Warrior Skaldr</h1></a>
+                    
+                    
+                    <!--home button-->
+                    <div class="buttonimage-container">
+                        <a href="../index.html">
+                            <img src="../siggypix.png" alt="pixelated helmet" style="image-rendering: pixelated;">
+                        </a>
+                    </div>
+                    
+
+                </div>
+                  
+            </div>
+            <div class="side-menu">
+                <a href="../index.html">
+                    <div class="menubutton" id="menubutton">
+                        <i class="fas fa-home" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Home
+                    </div>
+                </a>
+
+                <a href="../tabs.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-play" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;GW2 Tabs
+                    </div>
+                </a>
+                
+                <a href="../requests.html">
+                    <div class="menubutton" >
+                        <i class="fas fa-music" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;Song Request
+                    </div>
+                </a>
+
+                <a href="../irlmusic.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;IRL Music
+                    </div>
+                </a>
+            
+
+                <a href="../about.html">
+                    <div class="menubutton" >
+                        &nbsp;<i class="fas fa-portrait" style="font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;About Siggy
+                    </div>
+                </a>
+
+                    
+                
+                <div class="copy-right">
+                    <p>Sigfirar Finnlaoch&copy;</p>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    // Function to close the side menu
+                    function closeSideMenu() {
+                        $('.side-menu').removeClass('open');
+                        $('.side-menu').css('left', '-500px');
+                    }
+    
+                    // Function to open the side menu
+                    function openSideMenu() {
+                        $('.side-menu').addClass('open');
+                        $('.side-menu').css('left', '0');
+                    }
+    
+                    // Close the side menu initially
+                    closeSideMenu();
+    
+                    // Toggle the side menu when burger menu is clicked
+                    $('.burger-menu').click(function() {
+                        if ($('.side-menu').hasClass('open')) {
+                            closeSideMenu();
+                        } else {
+                            openSideMenu();
+                        }
+                    });
+    
+                    // Close the side menu when the user clicks outside of it
+                    $(document).click(function(event) {
+                        if (!$(event.target).closest('.side-menu').length && !$(event.target).closest('.burger-menu').length) {
+                            closeSideMenu();
+                        }
+                    });
+                });
+               
+              </script>
+        </div>
+        <main>
+            <div class="main-content">
+
+                <h3>In The House, in a Heartbeat - 28 Days Later OST</h3>
+                <p>
+                    Tempo = 74bpm
+                    
+                    <br>
+                    4/4
+                    <br>
+                    
+                    <table class="tabTable" id="tabTable" style="width: 300px;">
+                        
+                        <th> &nbsp;&nbsp;&nbsp;&nbsp; mp3 Preview:</th>
+                        <tr>
+                            
+                            <td>
+                                <audio controls style="background-color: rgba(105, 105, 105, 0.795);"><source src="inthehouseinaheartbeatmusescore.mp3"></audio>
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+
+                <table class="tabTable" id="tabTable" style="padding-bottom: 0px;">
+                
+                    <th width="3%">&nbsp;</th>
+                    <th width="18%">Minstrel Upper</th>
+                    <th width="350">Harp/Min Lower</th>
+                    <th width="350">Bass</th>
+                    <th width="150">Flute</th>
+                    <th width="80">Horn</th>
+                    <tr>
+                        <td align="center">IN</td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            A
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6 ~ &nbsp;
+                            
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4]</span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4]</span>
+                            ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3] [6]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[3] [6]</span>/3
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3] [6]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[3] [6]</span>/3
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] [6/8]</span>
+                            <span style="color:rgb(174, 182, 255);">[4] [6/8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] [6/8]</span>
+                            <span style="color:rgb(174, 182, 255);">[4] [6/8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            &nbsp; ~ &nbsp; 
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            &nbsp;  ~ &nbsp; 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            77777 - - - 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                            4 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                            4 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                            6 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                            6 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                            4 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                            4 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            1 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[77777]</span>- - -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~ 
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                    <tr>
+                        <td>
+                            B
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                            
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3/6]</span>/3 ~ 
+                            <span style="color:rgb(174, 182, 255);">[6]</span> ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3/6/7]</span>/3 ~ 1 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span> ~
+                            <span style="color:rgb(174, 182, 255);">[6]</span> ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/7/8]</span> ~
+                            1 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5/8]</span>/3 ~ 
+                            <span style="color:rgb(174, 182, 255);">[6]</span> ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5/7/8]</span>/3 ~ 1 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6]</span>/2/4 ~
+                            <span style="color:rgb(174, 182, 255);">[6]</span> ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6/7]</span>/2/4
+                            ~ 1 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+                        </td>
+                        <td>
+                            <!--BassB-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6] - [6]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[66]</span>}
+                            <span style="color:rgb(174, 182, 255);">[6] [6] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6] - [6]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[66]</span>}
+                            <span style="color:rgb(174, 182, 255);">[6] [6] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] - [4]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[44]</span>}
+                            <span style="color:rgb(174, 182, 255);">[4] [4] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] - [4]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[44]</span>}
+                            <span style="color:rgb(174, 182, 255);">[4] [4] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8] - [8]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[88]</span>}
+                            <span style="color:rgb(174, 182, 255);">[8] [8] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8] - [8]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[88]</span>}
+                            <span style="color:rgb(174, 182, 255);">[8] [8] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            &nbsp;&nbsp;2 - &nbsp;2. {22} 2 2 - &nbsp;&nbsp;
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            &nbsp;&nbsp;2 - &nbsp;2. {[22]} 2 2 - &nbsp;&nbsp;
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+
+                        </td>
+                        <td>
+                            <!--FluteB-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            
+
+                        </td>
+                        <td>
+                            <!--HornB-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>
+                            <!--MinC-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--Min2C-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3/6]</span>/3 
+                            <span style="color:rgb(174, 182, 255);">[6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3/6/7]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[7 8 8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            <span style="color:rgb(174, 182, 255);">[6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/7/8]</span>
+                            <span style="color:rgb(174, 182, 255);">[7 8 8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5/8]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5/7/8]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[7 8 8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6]</span>/2/4
+                            <span style="color:rgb(174, 182, 255);">[6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6/7]</span>/2/4
+                            <span style="color:rgb(174, 182, 255);">[7 8 8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--BassC-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6] - [6]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[66]</span>}
+                            <span style="color:rgb(174, 182, 255);">[6] [6] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6] - [6]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[66]</span>}
+                            <span style="color:rgb(174, 182, 255);">[6] [6] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] - [4]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[44]</span>}
+                            <span style="color:rgb(174, 182, 255);">[4] [4] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] - [4]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[44]</span>}
+                            <span style="color:rgb(174, 182, 255);">[4] [4] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8] - [8]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[88]</span>}
+                            <span style="color:rgb(174, 182, 255);">[8] [8] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8] - [8]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[88]</span>}
+                            <span style="color:rgb(174, 182, 255);">[8] [8] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            &nbsp;&nbsp;2 - &nbsp;2. {22} 2 2 - &nbsp;&nbsp;
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            &nbsp;&nbsp;2 - &nbsp;2. {[22]} 2 2 - &nbsp;&nbsp;
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--FluteC-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--HornC-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                             2
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            ~
+                            <span style="color:rgb(136, 255, 136);">|</span> 
+         
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>
+                            <!--MinD-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6/7
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            6/8
+                            <span style="color:rgb(255, 168, 54);">(3)</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3/6]</span>/3 
+                            <span style="color:rgb(174, 182, 255);">[6 6 6 6 6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[3/6/7]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[7 7 7 8 8 8 8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/8]</span>
+                            <span style="color:rgb(174, 182, 255);">[6 6 6 6 6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4/6/7/8]</span>
+                            <span style="color:rgb(174, 182, 255);">[7 7 7 8 8 8 8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5/8]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[6 6 6 6 6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[5/7/8]</span>/3
+                            <span style="color:rgb(174, 182, 255);">[7 7 7 8 8 8 8]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6]</span>/2/4
+                            <span style="color:rgb(174, 182, 255);">[6 6 6 6 6 6 6]</span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6/7]</span>/2/4
+                            <span style="color:rgb(174, 182, 255);">[7 7 7 8]</span> - - -
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--BassD-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6] - [6]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[66]</span>}
+                            <span style="color:rgb(174, 182, 255);">[6] [6] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[6] - [6]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[66]</span>}
+                            <span style="color:rgb(174, 182, 255);">[6] [6] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] - [4]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[44]</span>}
+                            <span style="color:rgb(174, 182, 255);">[4] [4] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[4] - [4]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[44]</span>}
+                            <span style="color:rgb(174, 182, 255);">[4] [4] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8] - [8]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[88]</span>}
+                            <span style="color:rgb(174, 182, 255);">[8] [8] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <span style="color:rgb(174, 182, 255);">[8] - [8]. </span>
+                            {<span style="color:rgb(174, 182, 255);">[88]</span>}
+                            <span style="color:rgb(174, 182, 255);">[8] [8] - </span>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            &nbsp;&nbsp;2 - &nbsp;2. {22} 2 2 - &nbsp;&nbsp;
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            &nbsp;&nbsp;2 - &nbsp;2. {[2]}2 - - - &nbsp;
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--FluteD-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            3 ~ 4 ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            5 ~ ~ ~
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                        </td>
+                        <td>
+                            <!--HornD-->
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            6
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            4
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            4
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            8
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            8
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            <br>
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2
+                            <span style="color:rgb(136, 255, 136);">|</span>
+                            2
+                            <span style="color:rgb(136, 255, 136);">|</span> 
+                        </td>
+                    </tr>
+
+                    
+            </div>
+        </main>
