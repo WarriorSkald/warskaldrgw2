@@ -28,6 +28,7 @@ table {
 .tabTable th {
     color: #47fab6fd;
     font-size: 1rem;
+    white-space: nowrap;
 }
 
 .tabTable td {
@@ -35,6 +36,7 @@ table {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 .tab-list {
