@@ -459,6 +459,13 @@ li {
   height: 275px;
   filter: drop-shadow(rgba(0, 0, 0, 0.74) 1rem 1rem 10px);
   width: 100%;
+
+
+}
+
+.sidePanelImage {
+  width: 250px;
+  display: block;
 }
 
 #sidePanelSection {
@@ -470,6 +477,7 @@ li {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+
 }
 
 .ytBanner {
