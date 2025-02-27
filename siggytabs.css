@@ -4,6 +4,19 @@
        url('Norse-KaWl.otf')  format('opentype');
 }
 
+pre { 
+  background: #222; 
+  color: white; 
+  padding: 10px; 
+  border-radius: 5px; 
+  overflow-x: auto; 
+  white-space: pre-wrap; 
+  font-size: 15px; /* Larger font */
+  line-height: 2; /* Double spacing */
+  font-family: monospace; /* Ensures proper alignment */
+}
+
+
 h1 {
   font-family: norseFont;
   font-weight: bold;
