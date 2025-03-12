@@ -56,8 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Detect rests (if there’s a gap before this note)
                     if (lastTime >= 0 && startTime > lastTime) {
                         let restDuration = (startTime - lastTime) * 4; // Convert to beats
-                        let restSymbol = restDuration >= 1 ? "~" : "-"; // Use "~" for quarter rest, "-" for eighth rest
-                        outputText += restSymbol + " "; // Add rest symbol
+                        let restSymbol = restDuration >= 1 ? "~" : "-"; // Quarter or eighth rest
+                        let restSpaces = " ".repeat(Math.round(restDuration * 2)); // Restore spacing
+                        outputText += restSymbol + restSpaces;
                     }
 
                     // Sort notes in ascending order of MIDI value before converting to Jianpu
@@ -80,7 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             return jianpu;
                         });
 
-                    outputText += chordJianpu.join("/") + " "; // Chords are printed as "note1/note2/note3"
+                    // Get the duration of this note or chord (convert to quarter note length)
+                    let durationInBeats = notes[0].duration * 4;
+                    let noteSpaces = " ".repeat(Math.round(durationInBeats * 2)); // Restore spacing
+
+                    outputText += chordJianpu.join("/") + noteSpaces; // Chords are printed as "note1/note2/note3"
 
                     lastTime = startTime; // Update last time to current note's start time
                 });
