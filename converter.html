@@ -136,7 +136,7 @@
         <main>
             <div class="main-content">
                 <h2>
-
+                    
                 </h2>
                 <h2>Upload a MIDI File</h2>
                 <input type="file" id="midiFileInput" accept=".mid">
@@ -144,85 +144,12 @@
                     <h3>GW2 Notation:</h3>
                     <pre id="output">Upload a MIDI file to see GW2/Jianpu notation here...</pre>
 
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            let midiInput = document.getElementById("midiFileInput");
-                            let output = document.getElementById("output");
-                
-                            if (!midiInput || !output) {
-                                console.error("Error: Could not find necessary HTML elements.");
-                                return;
-                            }
-                
-                            midiInput.addEventListener("change", async function (event) {
-                                const file = event.target.files[0];
-                                if (!file) return;
-                
-                                const reader = new FileReader();
-                                reader.onload = async function (e) {
-                                    try {
-                                        const midiData = e.target.result;
-                                        const midi = new TonejsMidi(midiData); // Load MIDI
-                                        console.log("MIDI loaded successfully!");
-                                        convertToJianpu(midi);
-                                    } catch (error) {
-                                        console.error("Error parsing MIDI file:", error);
-                                    }
-                                };
-                                reader.readAsArrayBuffer(file);
-                            });
-                
-                            function convertToJianpu(midi) {
-                                let outputText = "";
-                                
-                                midi.tracks.forEach(track => {
-                                    if (track.notes.length === 0) return;
-                
-                                    outputText += `Track: ${track.name || "Untitled"}\n\n`;
-                
-                                    track.notes.forEach(note => {
-                                        let pitch = note.midi % 12;
-                                        let octave = Math.floor(note.midi / 12) - 1;
-                                        let durationInBeats = note.duration * 4; // Convert to quarter note length
-                
-                                        // Map MIDI pitch to Jianpu (1=C, 2=D, etc.)
-                                        let jianpuMap = { 0: "1", 2: "2", 4: "3", 5: "4", 7: "5", 9: "6", 11: "7" };
-                                        let jianpu = jianpuMap[pitch] || "?"; // Use "?" if not found
-                
-                                        // Apply dots for octave
-                                        //if (octave <= 3) {
-                                        //    jianpu = '\u0323' + jianpu; // Low octave → dot below
-                                        //} else if (octave >= 5) {
-                                        //    jianpu = '\u0307' + jianpu; // High octave → dot above
-                                        //}
+                    <script src="midiConverter.js"></script>
 
-                                        // Apply brackets for octaves
-                                        if (octave <= 3) {
-                                            jianpu = `[${jianpu}]`; // Low octave → brackets
-                                        } else if (octave >= 5) {
-                                            jianpu = `(${jianpu})`; // High octave → round brackets
-                                        }
-                
-                                        // Rests
-                                        if (note.name.includes("rest")) {
-                                            if (durationInBeats >= 1) {
-                                                jianpu = "~"; // Quarter rest
-                                            } else {
-                                                jianpu = "-"; // Eighth rest
-                                            }
-                                        }
-                
-                                        // Add spacing based on duration
-                                        let spaces = " ".repeat(Math.round(durationInBeats * 2)); // More spacing for longer notes
-                                        outputText += jianpu + spaces;
-                                    });
-                
-                                    outputText += "\n\n"; // Extra space between tracks
-                                });
-                
-                                output.textContent = outputText;
-                            }
-                        });
+                    <div id="output"></div>
+
+                    <script>
+                        
                     </script>
             </div>
         </main>
